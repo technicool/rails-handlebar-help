@@ -1,6 +1,21 @@
 # Handlebar::Help
 
-Some helpers that work in both html and js erb files to generate handlebars templates inline. Requires V8
+Some helpers that work in both html and js erb files to generate handlebars templates inline. Requires V8.
+
+This is a pre-alpha version of the code. The helpers actually work, but this project needs some more massaging into a proper gem before we can reach a stable point.
+
+This code was originally used in MHPOffice.com, and is donated here under Creative Commons CC BY 3.0 license.
+
+This project is officially hosted at: https://github.com/technicool/rails-handlebar-help
+
+## Still To Do
+
+* Ensure that the helpers load into both .html.erb and .html.js helpers.
+* Clean up the global javascript variable name
+* Add configuration file for rails for the location of Javascript helper function files
+* Add generator / installer for rails projects.
+
+Please feel free to contribute or add bugs on Github.
 
 ## Installation
 
