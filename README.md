@@ -36,7 +36,7 @@ Or install it yourself as:
 You can use handlebars helpers in both JS and HTML erb's
 
 ## Javascript ERB
-```javascript
+```erb
     var hbsTemplate = <%= handlebars_script_template do %>
     <div class="alert">
       <strong>Success!</strong> You have eaten {{mufffins}} muffins.
@@ -49,7 +49,7 @@ You can use handlebars helpers in both JS and HTML erb's
 ```
 
 ## HTML ERB View
-```ruby
+```erb
     <%= handlebars_script_template "hbs-template1" do %>
     <div class="alert">
       <strong>Success!</strong> You have eaten {{mufffins}} muffins.
