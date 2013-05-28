@@ -33,7 +33,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can use handlebars helpers in both JS and HTML erb's
+
+## Javascript ERB
+    var hbsTemplate = <%= handlebars_script_template do %>
+    <div class="alert">
+      <strong>Success!</strong> You have eaten {{mufffins}} muffins.
+    </div>
+    <% end %>;
+    function showMuffinAlert() {
+      var $hbs = $(hbsTemplate( {muffins: 5} ));
+      $("#muffinCount").empty().append($hbs);
+    }
+
+## HTML ERB View
+    <%= handlebars_script_template "hbs-template1" do %>
+    <div class="alert">
+      <strong>Success!</strong> You have eaten {{mufffins}} muffins.
+    </div>
+    <% end %>
+    <span id="muffincount"></span>
+    <script>
+    function showMuffinAlert() {
+      var $hbs = $(hbsTemplate( {muffins: 5} ));
+      $("#muffinCount").empty().append($hbs);
+    }
+    </script>
+
 
 ## Contributing
 
