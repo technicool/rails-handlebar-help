@@ -1,5 +1,8 @@
 #!/bin/sh
 
+## Pass a commit message as the only parameter, and we will commit all changes,
+## and push the updates up to the origin.
+
 git add -A
 git commit -m "$1"
 git push
