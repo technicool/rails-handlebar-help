@@ -2,7 +2,7 @@
 
 Some helpers that work in both html and js erb files to generate handlebars templates inline. Requires V8.
 
-This is a pre-alpha version of the code. The helpers actually work, but this project needs some more massaging into a proper gem before we can reach a stable point.
+This is a pre-alpha version of the code. The helpers actually work, but this project needs some more massaging into a proper gem before we can reach a stable point. Please contribute to the project by submitting pull requests!
 
 This code was originally used in MHPOffice.com, and is donated here under Creative Commons CC BY 3.0 license.
 
